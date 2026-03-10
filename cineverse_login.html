@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneVerse - Create Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cineverse-style.css">
+    <link rel="icon" type="image/x-icon" href="#">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Header -->
+        <header class="login-header">
+            <a href="cineverse4.html" class="back-home">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <h1 class="logo">One<span>Verse</span></h1>
+        </header>
+
+        <!-- Main Form -->
+        <main class="form-wrapper">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Create Your Account</h2>
+                    <p>Join OneVerse and start streaming unlimited content</p>
+                </div>
+
+                <form id="signupForm" class="signup-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">
+                                    <i class="fas fa-user"></i> First Name
+                                </label>
+                                <input type="text" id="firstName" name="firstName" required 
+                                       placeholder="Enter your first name">
+                                <div class="error-message" id="firstNameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">
+                                    <i class="fas fa-user"></i> Last Name
+                                </label>
+                                <input type="text" id="lastName" name="lastName" required 
+                                       placeholder="Enter your last name">
+                                <div class="error-message" id="lastNameError"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">
+                                <i class="fas fa-birthday-cake"></i> Age
+                            </label>
+                            <input type="number" id="age" name="age" min="1" max="120" required 
+                                   placeholder="Enter your age">
+                            <div class="error-message" id="ageError"></div>
+                            <div class="age-warning" id="ageWarning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                You must be 18 or older to create an account
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Account Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">Account Information</h3>
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email Address
+                            </label>
+                            <input type="email" id="email" name="email" required 
+                                   placeholder="your.email@example.com">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="password">
+                                    <i class="fas fa-lock"></i> Password
+                                </label>
+                                <div class="password-input">
+                                    <input type="password" id="password" name="password" required 
+                                           placeholder="Create a strong password">
+                                    <button type="button" class="toggle-password" id="togglePassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="password-strength">
+                                    <div class="strength-meter">
+                                        <div class="strength-bar" id="strengthBar"></div>
+                                    </div>
+                                    <span class="strength-text" id="strengthText">Password strength</span>
+                                </div>
+                                <div class="error-message" id="passwordError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmPassword">
+                                    <i class="fas fa-lock"></i> Confirm Password
+                                </label>
+                                <div class="password-input">
+                                    <input type="password" id="confirmPassword" name="confirmPassword" required 
+                                           placeholder="Re-enter your password">
+                                    <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                                <div class="error-message" id="confirmPasswordError"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-group terms-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="terms-link">Privacy Policy</a>
+                        </label>
+                        <div class="error-message" id="termsError"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Create Account</span>
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                    </button>
+
+                    <!-- Form Messages -->
+                    <div class="form-message" id="formMessage"></div>
+
+                    <!-- Already have account -->
+                    <div class="login-link">
+                        Already have an account? <a href="#" class="link">Sign In</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="login-footer">
+            <p>Questions? Call <span class="phone-number">0800-123-4567</span></p>
+            <p>&copy; 2024 OneVerse. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="cineverse-login.js"></script>
+</body>
+</html>

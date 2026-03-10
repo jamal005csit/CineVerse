@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="film2.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo-container">
+                <h1 class="logo">Cine<span>Verse</span></h1>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search movies, TV shows, and more...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- User Menu -->
+            <div class="user-menu">
+                <div class="notification">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-count">3</span>
+                </div>
+                <div class="user-avatar">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="User Avatar">
+                </div>
+                <button class="menu-btn">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-fire"></i>
+                <span>Trending</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-film"></i>
+                <span>Movies</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-tv"></i>
+                <span>TV Shows</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-heart"></i>
+                <span>My List</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-history"></i>
+                <span>Recently Viewed</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-download"></i>
+                <span>Downloads</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <h3>Categories</h3>
+            <div class="categories">
+                <a href="#" class="category">Action</a>
+                <a href="#" class="category">Comedy</a>
+                <a href="#" class="category">Drama</a>
+                <a href="#" class="category">Sci-Fi</a>
+                <a href="#" class="category">Horror</a>
+                <a href="#" class="category">Documentary</a>
+                <a href="#" class="category">Animation</a>
+                <a href="#" class="category">Romance</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Stranger Things</h1>
+                <p class="hero-description">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                <div class="hero-actions">
+                    <button class="play-btn">
+                        <i class="fas fa-play"></i> Play Now
+                    </button>
+                    <button class="info-btn">
+                        <i class="fas fa-info-circle"></i> More Info
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <div class="content-sections">
+            <!-- Continue Watching -->
+            <section class="content-section">
+                <h2 class="section-title">Continue Watching</h2>
+                <div class="videos-grid">
+                    <!-- Video Card 1 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="The Dark Knight">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%"></div>
+                            </div>
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">The Dark Knight</h3>
+                            <p class="video-meta">2h 32min • Action • 2008</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1489599809516-9827b6d1cf13?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Inception">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 40%"></div>
+                            </div>
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Inception</h3>
+                            <p class="video-meta">2h 28min • Sci-Fi • 2010</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Interstellar">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Interstellar</h3>
+                            <p class="video-meta">2h 49min • Adventure • 2014</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 4 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="The Matrix">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 20%"></div>
+                            </div>
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">The Matrix</h3>
+                            <p class="video-meta">2h 16min • Sci-Fi • 1999</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommended For You -->
+            <section class="content-section">
+                <h2 class="section-title">Recommended For You</h2>
+                <div class="videos-grid">
+                    <!-- Video Card 5 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Avengers: Endgame">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Avengers: Endgame</h3>
+                            <p class="video-meta">3h 2min • Action • 2019</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 6 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Parasite">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Parasite</h3>
+                            <p class="video-meta">2h 12min • Drama • 2019</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 7 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Joker">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Joker</h3>
+                            <p class="video-meta">2h 2min • Crime • 2019</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 8 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1543536448-d209d2d13a1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="1917">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">1917</h3>
+                            <p class="video-meta">1h 59min • War • 2019</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trending Now -->
+            <section class="content-section">
+                <h2 class="section-title">Trending Now</h2>
+                <div class="videos-grid">
+                    <!-- Video Card 9 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1489599809516-9827b6d1cf13?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Dune">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Dune</h3>
+                            <p class="video-meta">2h 35min • Sci-Fi • 2021</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 10 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Spider-Man: No Way Home">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Spider-Man: No Way Home</h3>
+                            <p class="video-meta">2h 28min • Action • 2021</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 11 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="The Batman">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">The Batman</h3>
+                            <p class="video-meta">2h 56min • Action • 2022</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 12 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Top Gun: Maverick">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Top Gun: Maverick</h3>
+                            <p class="video-meta">2h 11min • Action • 2022</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- New Releases -->
+            <section class="content-section">
+                <h2 class="section-title">New Releases</h2>
+                <div class="videos-grid">
+                    <!-- Video Card 13 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Oppenheimer">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Oppenheimer</h3>
+                            <p class="video-meta">3h 0min • Biography • 2023</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 14 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Barbie">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Barbie</h3>
+                            <p class="video-meta">1h 54min • Comedy • 2023</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 15 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="Mission: Impossible">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Mission: Impossible</h3>
+                            <p class="video-meta">2h 43min • Action • 2023</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 16 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1543536448-d209d2d13a1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225&q=80" alt="The Creator">
+                            <div class="video-overlay">
+                                <button class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">The Creator</h3>
+                            <p class="video-meta">2h 13min • Sci-Fi • 2023</p>
+                            <div class="video-actions">
+                                <button class="play-small-btn">
+                                    <i class="fas fa-play"></i> Play
+                                </button>
+                                <button class="info-small-btn">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2 class="logo">Cine<span>Verse</span></h2>
+                <p class="footer-tagline">Stream Unlimited Movies & TV Shows</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Browse</h4>
+                    <a href="#">Movies</a>
+                    <a href="#">TV Shows</a>
+                    <a href="#">New Releases</a>
+                    <a href="#">Trending</a>
+                </div>
+                
+                <div class="link-column">
+                    <h4>Account</h4>
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Sign Out</a>
+                </div>
+                
+                <div class="link-column">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Content Policy</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CineVerse. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="film2.js"></script>
+</body>
+</html>
